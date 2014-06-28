@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'rock_paper_scissors' %>
+
+<div>
+  <strong>Instructions:</strong>
+  <p class="lead"><%= @project.instructions %></p>
+</div>
+
+<% if @project.article %>
+
+	<h2><%= @project.article.title %></h2>
+
+	<p>
+		<%= @project.article.description %>
+	</p>
+
+	<p>
+		<%= image_tag @project.article.image.url(:medium) %>
+	</p>
+
+<% end %>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

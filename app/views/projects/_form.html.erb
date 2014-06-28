@@ -1,0 +1,70 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: "full-width fat-title" %>
+  </div>
+  <div class="field">
+    <%= f.label :instructions %><br>
+    <%= f.text_area :instructions, class: "full-width fat-description" %>
+  </div>
+
+  <!-- ************** Article Attributes ******************* -->
+
+    <%= f.fields_for :article, html: { multipart: true } do |a| %>  
+
+      <p>
+        <%= a.label :title %><br>
+        <%= a.text_field :title, class: "full-width fat-title" %>
+      </p>
+     
+      <p>
+        <%= a.label :description %><br>
+        <%= a.text_area :description, class: "full-width fat-description" %>
+      </p>
+
+      <div class="form-group">
+        <% if a.object.image? %>
+          <%= image_tag(a.object.image.url(:medium)) %>
+          <br />
+          <em>Current image</em><br />
+        <% end %>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <% 3.times do %>
+              <%= a.label :image %>
+              <%= a.file_field :image, html: { class: 'form-control' } %>
+              <% end %>
+            </div>
+
+            <!-- Upload Image via URL -->
+
+            <div class="field col-sm-6">
+              <strong>Upload Image via URL:</strong><br />
+              <%= text_field_tag 'image_url' %>
+            </div>
+          </div>
+      </div>
+
+    <% end %>
+
+    <p>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+    </p>
+
+ <!-- <div class="actions">
+    <%#= f.submit %>
+  </div> -->
+<% end %>

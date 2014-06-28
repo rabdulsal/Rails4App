@@ -1,0 +1,24 @@
+<div>
+	<h2>All Articles</h2>
+	<%= link_to "Create New Article", new_article_url, class: "btn btn-default btn-lg pull-right" %>
+	
+	<% @articles.each do |article| %>
+
+		<div class="clear media">
+			<a class="pull-left" href=<%="#{article_url(article)}"%> title=<%="#{article.title}"%>>
+				<%= image_tag article.image.url(:small), class: "img-thumbnail media-object" %>
+			</a>
+			<div class="media-body">
+				<h3 class="media-heading"><%= article.title %></h3>
+				<h4><%= truncate(article.description, length: 160) %></h4>
+				<p class="pull-right"><%= link_to "Read full", article_url(article) %></p>
+			</div>
+		</div>
+
+		<br /><br />
+
+	<% end %>
+	
+
+	
+</div>

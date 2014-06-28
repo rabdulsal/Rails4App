@@ -1,0 +1,55 @@
+<header>	
+	<section class="homepage container">
+
+		<%= link_to 'Look around', projects_path %>
+		
+		<div class="background">
+			<div class="headliner">
+				<section class="row">
+					<div class="clearfix">
+						<div class="col-sm-3">
+							<%= image_tag 'Rashad-circle-photo.gif', class: "selfie" %>
+
+						</div>
+						<div class="col-sm-9 clearfix">
+					      <h1>Hi, I'm Rashad. <br />
+					      	<small>Designer & developer extraordinaire!</small>
+					      </h1> 
+					      
+					      <%#= link_to 'Look around', about_path, class: 'enter custo-btn pull-right' %>		    
+						</div>
+					</div>
+				</section>
+
+				<section class="row homepage-links">
+					<h3 class="col-sm-4">
+						<%= link_to 'CONTACT', "mailto:rabdulsalaam@gmail.com", title: "Contact me by email" %>
+					</h3>
+					<!--<h3 class="col-sm-4">
+						<%#= link_to 'PROJECTS', projects_path, title: "Go to my Projects page" %>
+					</h3>-->
+					<h3 class="col-sm-4">
+						<%= link_to 'ABOUT', about_path %>
+					</h3>
+					<h3 class="dropdown col-sm-4">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Check out my social media links">SOCIAL</a>
+			          <ul class="dropdown-menu">
+			          	<li>
+			            	<a href="http://www.github.com/rabdulsal" target="_blank" title="Go to my GitHub page">GitHub</a>
+			            </li>
+			            <li>
+			            	<a href="http://www.facebook.com/rsalaam80" target="_blank" title="Go to my Facebook page">Facebook</a>
+			            </li>
+			            <li>
+			            	<a href="http://www.twitter.com/rabdulsal" target="_blank" title="Go to my Twitter page">Twitter</a>
+			            </li>
+			            <li>
+			            	<a href="http://www.linkedin.com/in/rashadabdulsalaam" target="_blank" title="Go to my LinkedIn page">LinkedIn</a>
+			            </li>     
+			          </ul>
+			        </h3>
+				</section>
+			</div>
+		</div>
+	</section>
+</header>

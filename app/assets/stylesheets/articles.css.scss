@@ -1,0 +1,35 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.clear {
+	clear: both;
+}
+
+.push-right {
+	margin-right: 10px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.fat-title, .fat-description {
+	font-size: 150%;
+}
+
+.fat-title {
+	height: 40px;
+}
+
+.fat-description {
+	height: 200px;
+}
+
+.article-list tr {
+	margin-bottom: 10px;
+}
+
+.article-list td {
+	padding: 0 10px 10px 0;
+}

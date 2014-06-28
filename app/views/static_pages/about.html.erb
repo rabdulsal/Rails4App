@@ -1,0 +1,38 @@
+<div class="row">
+	<div class="col-sm-8">
+		<h1>
+			Hi, I'm Rashad Abdul-Salaam.<br>
+			<small>I'm passionate about startups, software and digital design.</small>
+
+		</h1>
+
+		<p class="text-justify">
+			Welcome my little home away from home on the internet: a place to showcase my work and ponder about my passions. I built this digital get-away primarily using Rails 4 and  Bootstrap 3 for easy styling and content publishing. I will be posting links to some of my personal projects and portfolio work, along with written pieces expounding upon my perspective on business, tech, and other flights of fancy.
+		</p>
+
+		<p class="text-justify">
+			Additionally, I'm available for web-design and development projects and contract work. This includes everything from simple startup MVP landing pages and static HTML sites, to more complex web applications requiring user sign-up/login, content management and the like.
+		</p>
+		<p class="text-justify">
+			Feel free to contact me with inquiries via the button to the right.
+		</p>
+
+	</div>
+
+	<% if @articles %>
+		<div class="col-sm-4">
+			<h2>Latest Updates</h2>
+		</div>
+
+		<% else %>
+
+		<div class="clearfix">
+			<h2>Contact Me</h2>
+			<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1530560_10152077714842684_1564845253_n.jpg" class="gg-selfie"/> <br /><br />
+			<%= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg", title: 'Click to email me' %>
+		</div>
+	<% end %>
+
+</div>
+
+

@@ -1,0 +1,19 @@
+<h2><%= link_to "Latest Articles", articles_url %></h2>
+
+	<% @articles.each do |article| %>
+
+		<% if article.id != @article.id %>
+			<div class="media">
+				<a class="pull-left" href=<%="#{article_url(article)}"%>>
+					<%= image_tag article.image.url(:small), class: "img-thumbnail media-object" %>
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading"><%= article.title %></h4>
+					<p><%= truncate(article.description, length: 100) %></p>
+					<p class="pull-right"><%= link_to "Read more", article_url(article) %></p>
+				</div>
+
+			</div>
+		<% end %>
+
+	<% end %>

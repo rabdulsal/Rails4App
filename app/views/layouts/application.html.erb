@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails4App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<% if @homepage %>
+
+<!-- Homepage Routing layout -->
+
+  <%= render '/static_pages/homepage' %>
+
+  <% else %>
+
+  <!-- Layout when not routing to Homepage -->
+
+  <%= render '/static_pages/navbar' %>
+
+<div id="wrapper" class="container navbar-margin clearfix">
+
+	<%= yield %>
+
+</div>
+
+<% end %>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
