@@ -33,7 +33,7 @@ gem 'paperclip', '~> 4.1'
 gem 'rails_12factor', group: :production
 gem 'pg'
 
-ruby "1.9.3"
+ruby "2.0.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
