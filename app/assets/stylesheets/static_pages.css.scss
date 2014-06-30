@@ -7,7 +7,7 @@
 }*/
 
 body {
-	background-image: url('fresh_snow.png');
+	background-image: url('subtle_background.png');
 }
 
 body, p, li {
@@ -19,6 +19,7 @@ body, p, li {
 	background-color: #fff;
 	min-height: 100% !important;
 	padding-bottom: 20px;
+	box-shadow: 0 2px 5px #aaa;
 }
 
 .homepage-links {
@@ -48,7 +49,7 @@ body, p, li {
 }
 
 .homepage .background {
-	background-image: url('http://dtlv.com/files/2013/12/shutterstock_92759866.jpg');
+	background-image: url('comp_coffee_desk.jpg');
 	opacity: 1;
 	display: table-cell;
 	vertical-align: middle;
@@ -146,11 +147,15 @@ body, p, li {
 }
 
 .selfie {
-	max-width: 100%;
+	width: 100%;
 }
 
 .gg-selfie {
-	width: 20%;
+	width: 15%;
+}
+
+.contact-bio {
+	text-align: center;
 }
 
 .dropdown-menu li a:hover {

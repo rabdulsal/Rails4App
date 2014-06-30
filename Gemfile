@@ -32,6 +32,7 @@ gem 'paperclip', '~> 4.1'
 # Heroku setup
 gem 'rails_12factor', group: :production
 gem 'pg'
+gem 'taps'
 
 ruby "2.0.0"
 
