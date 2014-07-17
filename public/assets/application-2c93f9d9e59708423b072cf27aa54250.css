@@ -1,0 +1,399 @@
+/* line 5, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 9, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.push-right {
+  margin-right: 10px;
+}
+
+/* line 13, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 17, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.fat-title, .fat-description {
+  font-size: 150%;
+}
+
+/* line 21, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.fat-title {
+  height: 40px;
+}
+
+/* line 25, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.fat-description {
+  height: 200px;
+}
+
+/* line 29, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.article-list tr {
+  margin-bottom: 10px;
+}
+
+/* line 33, /Users/rabdulsal/Rails4App/app/assets/stylesheets/articles.css.scss */
+.article-list td {
+  padding: 0 10px 10px 0;
+}
+/* line 1, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/rabdulsal/Rails4App/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*body {
+	font-family: 'Lato', sans-serif !important; font-weight: 100 !important;
+}*/
+/* line 10, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+body {
+  background-image: url(/assets/subtle_background.png);
+}
+
+/* line 14, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+body, p, li {
+  font-family: 'Raleway', serif !important;
+  font-size: 14px !important;
+}
+
+/* line 19, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+#wrapper {
+  background-color: #fff;
+  min-height: 100% !important;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 5px #aaa;
+}
+
+/* line 26, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage-links {
+  color: white;
+  font-weight: 400;
+  margin: 10px auto 0 !important;
+  width: 66.6%;
+  text-align: center;
+}
+
+/* line 33, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage-links h3 {
+  font-weight: bold;
+}
+
+/* line 36, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage-links a {
+  color: white;
+}
+
+/* line 39, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage-links a:hover {
+  text-decoration: underline;
+  background: none !important;
+  color: white !important;
+}
+
+/* line 45, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage {
+  height: 600px;
+  right: 0px;
+  background-attachment: fixed;
+  background-position: 50% 0px;
+}
+
+/* line 52, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.homepage .background {
+  background-image: url(/assets/comp_coffee_desk.jpg);
+  opacity: 1;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: none;
+}
+
+/* line 62, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/*.background-2 {
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 700px;
+	z-index: -2;
+}*/
+/*.blur-background {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}*/
+/* line 93, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.headliner {
+  width: 66.6%;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 12% auto 0;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+/* line 101, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.headliner h1, .headliner h1 small, .headliner p, .enter {
+  color: white !important;
+}
+
+/* line 104, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.headliner h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/* line 109, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.enter {
+  border: 5px solid #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* line 115, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.custo-btn:hover {
+  text-decoration: underline;
+}
+
+/* line 119, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.jumbotron {
+  opacity: .9;
+  text-align: center;
+}
+
+/* line 124, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.navbar {
+  background-image: none !important;
+}
+
+/* line 128, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 135, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.bio-bg {
+  background-color: white;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+/* line 142, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.border {
+  border: 1px solid black;
+}
+
+/* line 146, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.navbar-margin {
+  margin-top: 60px;
+}
+
+/* line 150, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.selfie {
+  width: 100%;
+}
+
+/* line 154, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.gg-selfie {
+  width: 15%;
+}
+
+/* line 158, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.contact-bio {
+  text-align: center;
+}
+
+/* line 162, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.dropdown-menu li a:hover {
+  color: #428bca !important;
+}
+
+/* line 166, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.rpc-title {
+  color: blue;
+}
+
+/* line 170, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.scoreboard {
+  position: relative;
+}
+
+/* line 175, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.scoreboard li {
+  display: inline;
+  font-size: 20px;
+  background-color: yellow;
+}
+
+/* line 180, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.score {
+  color: red;
+  font-size: 30px;
+}
+
+/* line 184, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.right {
+  float: right;
+}
+
+/* line 187, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.rounds li {
+  font-size: 20px;
+  list-style: none;
+}
+
+/* line 191, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.player-win {
+  color: green;
+  font-size: 22px;
+}
+
+/* line 196, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.inline li, .inline {
+  display: inline;
+}
+
+/* line 200, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.rps-field {
+  border: 2px solid gray;
+  min-height: 300px !important;
+  background-color: gray;
+}
+
+/* line 206, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.rps-buttons {
+  margin: 0 auto;
+}
+
+/* line 210, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+.play-image {
+  position: relative;
+  left: 50px;
+  top: 20px;
+  max-width: 150px;
+  display: inline-block !important;
+}
+
+/* line 218, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+#player, #CPU {
+  min-height: 200px;
+}
+
+/* line 222, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+#player {
+  background-color: red;
+}
+
+/* line 226, /Users/rabdulsal/Rails4App/app/assets/stylesheets/static_pages.css.scss */
+#CPU {
+  background-color: blue;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

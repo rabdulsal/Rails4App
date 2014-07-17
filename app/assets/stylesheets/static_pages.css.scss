@@ -7,7 +7,7 @@
 }*/
 
 body {
-	background-image: url('subtle_background.png');
+	background-image: asset_url('subtle_background.png');
 }
 
 body, p, li {
@@ -49,7 +49,7 @@ body, p, li {
 }
 
 .homepage .background {
-	background-image: url('comp_coffee_desk.jpg');
+	background-image: asset_url('comp_coffee_desk.jpg');
 	opacity: 1;
 	display: table-cell;
 	vertical-align: middle;

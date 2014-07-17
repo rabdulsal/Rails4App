@@ -34,6 +34,9 @@ gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'taps'
 
+# S3 setup
+gem 'asset_sync', "~> 1.0.0"
+
 ruby "2.0.0"
 
 # Use ActiveModel has_secure_password
