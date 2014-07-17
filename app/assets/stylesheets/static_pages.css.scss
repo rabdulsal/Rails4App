@@ -202,11 +202,16 @@ body, p, li {
 	background-color: gray;
 }
 
+.rps-buttons {
+	margin: 0 auto;
+}
+
 .play-image {
 	position: relative;
 	left: 50px;
 	top: 20px;
-	width: 150px;
+	max-width: 150px;
+	display: inline-block !important;
 }
 
 #player, #CPU {	

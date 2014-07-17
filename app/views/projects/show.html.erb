@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<%= render 'rock_paper_scissors' %>
+<%= render @partial %>
 
 <div>
+	<h1><%= @project.name %></h1>
   <strong>Instructions:</strong>
   <p class="lead"><%= @project.instructions %></p>
 </div>

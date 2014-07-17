@@ -10,6 +10,10 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    # Load specific Javascript for each project
+    @controller_name = "projects"
+    @action_name = @project.abrv
+    @partial = @project.abrv
   end
 
   # GET /projects/new
@@ -61,6 +65,11 @@ class ProjectsController < ApplicationController
       format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def rock_paper_scissors
+    @controller_name = "projects"
+    @action_name = "rock-paper-scissors"
   end
 
   private

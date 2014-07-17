@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   get 'view/index'
 
+  get 'static_pages/alert'
+
+  get 'static_pages/rock_paper_scissors'
+
   resources :posts
 
   resources :articles
