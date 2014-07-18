@@ -15,7 +15,13 @@ class ArticlesController < ApplicationController
   def create
   	@article = Article.new(article_params)
 
-    @article.image_from_url(params[:image_url])
+    # if @article.image_from_url(params[:image_url])
+
+    #   @article.image_from_url(params[:image_url])
+
+    # end
+
+    #@article.images ? @article.images << : @article.images = [] ; 
  
   	@article.save
   	
@@ -23,6 +29,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    @articles = Article.all
   end
 
   def update

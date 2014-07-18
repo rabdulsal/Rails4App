@@ -1,10 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<%= render @partial %>
+<%#= render @partial %>
 
 <div>
 	<h1><%= @project.name %></h1>
-  <strong>Instructions:</strong>
+
+	<div>
+		<% @project.images.each do |project_image| %>
+
+		<%= image_tag project_image.asset.url(:large) %>
+
+		<% end %>
+	</div>
+
+  	<strong>Description:</strong>
   <p class="lead"><%= @project.instructions %></p>
 </div>
 
@@ -23,4 +32,5 @@
 <% end %>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
+<%#= link_to 'New Article', new_project_article_path(@project) %>
 <%= link_to 'Back', projects_path %>

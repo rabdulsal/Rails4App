@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :images
+
   resources :projects
 
   get 'static_pages/homepage'

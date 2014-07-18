@@ -1,4 +1,4 @@
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, html: { multipart: true } ) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -20,33 +20,26 @@
     <%= f.text_area :instructions, class: "full-width fat-description" %>
   </div>
 
-  <!-- ************** Article Attributes ******************* -->
+  <!-- ************** Image Attributes ******************* -->
 
-    <%= f.fields_for :article, html: { multipart: true } do |a| %>  
-
-      <p>
-        <%= a.label :title %><br>
-        <%= a.text_field :title, class: "full-width fat-title" %>
-      </p>
-     
-      <p>
-        <%= a.label :description %><br>
-        <%= a.text_area :description, class: "full-width fat-description" %>
-      </p>
+    <%= f.fields_for :images do |a| %>  
 
       <div class="form-group">
-        <% if a.object.image? %>
-          <%= image_tag(a.object.image.url(:medium)) %>
+        <% if a.object.asset %>
+          <%= image_tag(a.object.asset.url(:medium)) %>
           <br />
           <em>Current image</em><br />
         <% end %>
 
         <div class="row">
           <div class="col-sm-6">
-            <% 3.times do %>
-              <%= a.label :image %>
-              <%= a.file_field :image, html: { class: 'form-control' } %>
-              <% end %>
+            
+              <%= a.label "Upload Project Images" %>
+
+             
+              <%= a.file_field :asset, html: { class: 'form-control' } %>
+              
+              
             </div>
 
             <!-- Upload Image via URL -->

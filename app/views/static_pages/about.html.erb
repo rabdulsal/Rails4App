@@ -17,6 +17,8 @@
 			Feel free to contact me with inquiries via the button to the right.
 		</p>
 
+		<%= render @projects %>
+
 	</div>
 
 	<% if @articles %>
@@ -24,9 +26,9 @@
 			<h2>Latest Updates</h2>
 		</div>
 
-		<% else %>
+	<% else %>
 
-		<div class="clearfix contact-bio">
+		<div class="col-sm-4 contact-bio">
 			<h2>Contact Me</h2>
 			<%= image_tag 'GG_Suit.gif', class: "gg-selfie" %> <br /><br />
 			<%= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg", title: 'Click to email me' %>

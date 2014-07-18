@@ -9,7 +9,7 @@ class Article < ActiveRecord::Base
 	validates_attachment_content_type :image, 
 	:content_type => /\Aimage\/.*\Z/
 
-	def image_from_url(url)
-		self.image = open(url)
-	end
+	# def image_from_url(url)
+	# 	self.image = open(url)
+	# end
 end

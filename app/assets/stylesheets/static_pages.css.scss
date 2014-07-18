@@ -15,12 +15,17 @@ body, p, li {
 	font-size: 14px !important;	
 }
 
-#wrapper {
+.content-wrapper, .aside-wrapper {
 	background-color: #fff;
 	min-height: 100% !important;
 	padding-bottom: 20px;
-	box-shadow: 0 2px 5px #aaa;
+	border: 1px solid #ddd;
 }
+	.content-wrapper {
+
+	}
+
+.aside-wrapper
 
 .homepage-links {
 	color: white;
@@ -151,7 +156,7 @@ body, p, li {
 }
 
 .gg-selfie {
-	width: 15%;
+	width: 50%;
 }
 
 .contact-bio {

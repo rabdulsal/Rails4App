@@ -19,12 +19,12 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   def new
     @project = Project.new
-    @project.build_article
+    3.times { @project.images.build }
   end
 
   # GET /projects/1/edit
   def edit
-    @project.build_article
+    3.times { @project.images.build }
   end
 
   # POST /projects
@@ -86,6 +86,6 @@ class ProjectsController < ApplicationController
                                                                                   :tags,
                                                                                   :image,
                                                                                   :_destroy
-                                                                                ])
+                                                                                ], images_attributes: [:id, :asset, :_destroy])
     end
 end
