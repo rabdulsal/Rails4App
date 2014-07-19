@@ -28,6 +28,7 @@ gem 'spring',        group: :development
 gem 'rubygems-update', '~> 2.2.2'
 
 gem 'paperclip', '~> 4.1'
+gem 'aws-sdk'
 
 # Heroku setup
 gem 'rails_12factor', group: :production
