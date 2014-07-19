@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-sm-8">
+	<div class="col-sm-9 content-wrapper">
 		<h1>
 			Hi, I'm Rashad Abdul-Salaam.<br>
 			<small>I'm passionate about startups, software and digital design.</small>
@@ -17,18 +17,20 @@
 			Feel free to contact me with inquiries via the button to the right.
 		</p>
 
-		<%= render @projects %>
+		<%#= render @projects %>
+
+		<%= render 'projects/project' %>
 
 	</div>
 
 	<% if @articles %>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<h2>Latest Updates</h2>
 		</div>
 
 	<% else %>
 
-		<div class="col-sm-4 contact-bio">
+		<div class="col-sm-3 contact-bio">
 			<h2>Contact Me</h2>
 			<%= image_tag 'GG_Suit.gif', class: "gg-selfie" %> <br /><br />
 			<%= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg", title: 'Click to email me' %>

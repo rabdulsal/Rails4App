@@ -8,6 +8,7 @@
 
 body {
 	background-image: asset_url('subtle_background.png');
+	padding-bottom: 30px;
 }
 
 body, p, li {
@@ -15,14 +16,15 @@ body, p, li {
 	font-size: 14px !important;	
 }
 
-.content-wrapper, .aside-wrapper {
+.wrapper {
 	background-color: #fff;
 	min-height: 100% !important;
-	padding-bottom: 20px;
+	
 	border: 1px solid #ddd;
 }
 	.content-wrapper {
-
+		border-right: 1px solid #ddd;
+		padding-bottom: 20px;
 	}
 
 .aside-wrapper
