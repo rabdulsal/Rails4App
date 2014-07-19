@@ -1,15 +1,21 @@
 class ImagesController < ApplicationController
-  before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :set_image, only: [:edit, :update, :destroy]
+  before_action :get_project
+
+  def get_project
+    @project = Project.find(params[:project_id])
+  end
 
   # GET /images
   # GET /images.json
   def index
-    @images = Image.all
+    @pimages = @project.images
   end
 
   # GET /images/1
   # GET /images/1.json
   def show
+    @image = @project.images.find(params[:id])
   end
 
   # GET /images/new
@@ -24,12 +30,12 @@ class ImagesController < ApplicationController
   # POST /images
   # POST /images.json
   def create
-    @image = Image.new(image_params)
+    @image = @projectimages.new(image_params)
 
     respond_to do |format|
       if @image.save
-        format.html { redirect_to @image, notice: 'Image was successfully created.' }
-        format.json { render :show, status: :created, location: @image }
+        format.html { redirect_to [@project, @image], notice: 'Image was successfully created.' }
+        format.json { render :show, status: :created, location: [@project, @image] }
       else
         format.html { render :new }
         format.json { render json: @image.errors, status: :unprocessable_entity }
@@ -56,7 +62,7 @@ class ImagesController < ApplicationController
   def destroy
     @image.destroy
     respond_to do |format|
-      format.html { redirect_to images_url, notice: 'Image was successfully destroyed.' }
+      format.html { redirect_to project_url(@project), notice: 'Image was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

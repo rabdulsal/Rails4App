@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Project:</strong>
-  <%= @image.project_id %>
-</p>
+<h1><%= @project.name %></h1>
 
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<div>
+  <%= image_tag @image.asset.url(:large) %>
+</div>
+
+<%= link_to 'Edit', edit_project_image_path(@project, @image) %> |
+<%= link_to 'Back', project_path(@project) %>

@@ -3,18 +3,33 @@
 <%#= render @partial %>
 
 <div>
-	<h1><%= @project.name %></h1>
+	<h1>
+		<%= @project.name %>
+		<span class="lead">
+			<%= link_to 'Edit', edit_project_path(@project) %> |
+			<%#= link_to 'New Article', new_project_article_path(@project) %>
+			<%= link_to 'All Projects', projects_path %>
+		</span>
+	</h1>
+	
+
+	<h2>Description:</h2>
+  	<p class="lead"><%= @project.instructions %></p>
 
 	<div>
 		<% @project.images.each do |project_image| %>
 
-		<%= image_tag project_image.asset.url(:large) %>
+		<%= image_tag project_image.asset.url(:medium) %> <br />
+
+		<%= link_to "Show", [@project, project_image] %> | 
+		<%= link_to "Edit", edit_project_path(@project) %> | 
+		<%= link_to "Delete", [@project, project_image], method: :delete %>
+
+		<br /><br />
 
 		<% end %>
 	</div>
 
-  	<strong>Description:</strong>
-  <p class="lead"><%= @project.instructions %></p>
 </div>
 
 <% if @project.article %>
@@ -31,6 +46,4 @@
 
 <% end %>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%#= link_to 'New Article', new_project_article_path(@project) %>
-<%= link_to 'Back', projects_path %>
+
