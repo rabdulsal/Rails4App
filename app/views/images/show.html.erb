@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @project.name %></h1>
+<h1>
+	<%= link_to "#{@project.name}", project_path(@project) %> <span class="lead"><%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+</h1>
 
 <div>
   <%= image_tag @image.asset.url(:large) %>
 </div>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to "Back to #{@project.name} Projects", project_path(@project) %>

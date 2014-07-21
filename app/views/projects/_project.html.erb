@@ -1,22 +1,40 @@
 <h1>My Projects</h1>
+	<div class="media">
+		<% @projects.each do |project| %>
 
-	<% @projects.each do |project| %>
+		<div class="clearfix push-down">
+			<section class="pull-left push-right">
+				<%= link_to image_tag(@proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
+			</section>		
 
-		<h2><%= link_to "#{project.name}", project_url(project) %></h2>
+			<section class="media-body">
 
-		<p><%= project.instructions %></p>
+				<h2 class="media-heading"><%= link_to "#{project.name}", project_url(project) %></h2>
 
-		<% project.images.each do |image| %>
+				<p class=""><%= project.instructions %></p>
 
-			<div class="pull-left">
-					
-					<%= link_to 'Edit', edit_project_path(project) %> | 
-		            <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-		            <br /><br />
+				<%# project.images.each do |image| %>
 
-					<%= link_to image_tag(image.asset.url(:medium)), project_image_path(project, image) %>  	        	
-        	</div>
+				<!--<div>
+					<%#= link_to 'Edit', edit_project_path(project) %> | 
+		            <%#= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+		            <%# if image.id != @proj_main_pic.id %>
 
+			            <ul class="sans-bullets">
+							<li>
+								<%#= link_to image_tag(image.asset.url(:thumb)), project_image_path(project, image) %>
+							</li>
+						</ul>
+
+					<%# end %>	        	
+	        	</div>-->
+
+	        	<%# end %>
+
+	        	<%= link_to "Read more", project_path(project), class: "pull-right" %>
+
+	        </section>
+	    </div>
 		<% end %>
-
-	<% end %>
+		
+	</div>

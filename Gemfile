@@ -35,6 +35,9 @@ gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'taps'
 
+# FancyBox
+gem 'fancybox-rails'
+
 # S3 setup
 gem 'asset_sync', "~> 1.0.0"
 

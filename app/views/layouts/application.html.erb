@@ -10,29 +10,29 @@
 </head>
 <body class="<%= @controller_name %> <%= @action_name %>">
 
-<% if @homepage %>
+  <% if @homepage %>
 
-<!-- Homepage Routing layout -->
+  <!-- Homepage Routing layout -->
 
-  <%= render '/static_pages/homepage' %>
+    <%= render '/static_pages/homepage' %>
 
-  <% else %>
+    <% else %>
 
-  <!-- Layout when not routing to Homepage -->
+    <!-- Layout when not routing to Homepage -->
 
-  <%= render '/static_pages/navbar' %>
+    <%= render '/static_pages/navbar' %>
 
-<div class="wrapper container navbar-margin clearfix">
+  <div class="wrapper container navbar-margin clearfix">
 
-	<%= yield %>
+  	<%= yield %>
 
-</div>
+  </div>
 
-<% end %>
+  <% end %>
 
-<!-- Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -13,7 +13,32 @@ body {
 
 body, p, li {
 	font-family: 'Raleway', serif !important;
-	font-size: 14px !important;	
+	font-size: 16px !important;	
+	line-height: 150%;
+}
+
+.title-link {
+	color: blue !important;
+}
+
+.sans-bullets li {
+	list-style: none;
+}
+
+.push-up {
+	margin-top: 10px;
+}
+
+.push-right {
+	margin-right: 10px;
+}
+
+.push-down {
+	margin-bottom: 10px;
+}
+
+.center {
+	margin: 0 auto;
 }
 
 .wrapper {
@@ -138,15 +163,8 @@ body, p, li {
     z-index:10;
 }
 
-.bio-bg {
-	background-color: white;
-	width: 100%;
-	padding-top: 20px;
-	margin-top: -20px;
-}
-
-.border {
-	border: 1px solid black;
+.border-top {
+	border-top: 1px dotted #666;
 }
 
 .navbar-margin {
@@ -161,8 +179,23 @@ body, p, li {
 	width: 50%;
 }
 
+.bio-bg {
+	width: 100%;
+	height: 100%;
+}
+
 .contact-bio {
 	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ddd;
+}
+
+.bio-text {
+	font-size: 14px !important;
+}
+
+.soc-med-icons img {
+	max-width: 16%;
 }
 
 .dropdown-menu li a:hover {

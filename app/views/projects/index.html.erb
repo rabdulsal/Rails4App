@@ -13,7 +13,7 @@
     <% @projects.each do |project| %>
       <tr>
         <td>
-          <%= %>
+          <%= link_to(image_tag(@main_pic.asset.url(:small)), project_path(project)) if project.images %>
         </td>
         <td>
           <h3><%= link_to project.name, project %></h3>

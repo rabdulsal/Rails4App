@@ -5,6 +5,7 @@ class StaticPagesController < ApplicationController
 
   def about
     @projects = Project.all
+    @proj_main_pic = @projects.last.images.first
   end
 
   def projects

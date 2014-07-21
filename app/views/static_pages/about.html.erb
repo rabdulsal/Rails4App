@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-9 content-wrapper">
-		<h1>
+		<!-- <h1>
 			Hi, I'm Rashad Abdul-Salaam.<br>
 			<small>I'm passionate about startups, software and digital design.</small>
 
@@ -16,7 +16,7 @@
 		<p class="text-justify">
 			Feel free to contact me with inquiries via the button to the right.
 		</p>
-
+ -->
 		<%#= render @projects %>
 
 		<%= render 'projects/project' %>
@@ -30,11 +30,27 @@
 
 	<% else %>
 
-		<div class="col-sm-3 contact-bio">
-			<h2>Contact Me</h2>
-			<%= image_tag 'GG_Suit.gif', class: "gg-selfie" %> <br /><br />
-			<%= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg", title: 'Click to email me' %>
-		</div>
+		<aside class="col-sm-3"> 
+			<div class="text-center">
+				<h2>Hi, I'm Rashad</h2>
+				<%= image_tag 'GG_Suit.gif', class: "gg-selfie" %> <br /><br />
+			</div>
+
+			<p class="text-justify bio-text">
+				I'm passionate about design, startups and all things tech. I want to help you take over the world through great web-design, whether your needs range from a simple landing page, up to a complex web application with content and multi-user management.
+			</p>
+
+			<ul class="inline soc-med-icons">
+				<li><%= link_to image_tag("linkedin.png"), "https://www.linkedin.com/in/rashadabdulsalaam", target: "_blank" %></li>
+				<li><%= link_to image_tag("facebook.png"), "https://www.facebook.com/rsalaam80", target: "_blank" %></li>
+				<li><%= link_to image_tag("twitter.png"), "https://www.twitter.com/rabdulsal", target: "_blank" %></li>
+				<li><%= link_to image_tag("email.png"), 'mailto:rabdulsalaam@gmail.com' %></li>
+			</ul>
+
+			<!--<p>
+				<%#= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg text-center", title: 'Click to email me' %>
+			</p>-->
+		</aside>
 	<% end %>
 
 </div>

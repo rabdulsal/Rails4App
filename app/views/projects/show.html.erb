@@ -4,31 +4,34 @@
 
 <div>
 	<h1>
-		<%= @project.name %>
+		<%= link_to "#{@project.name}", projects_path %>
 		<span class="lead">
-			<%= link_to 'Edit', edit_project_path(@project) %> |
-			<%#= link_to 'New Article', new_project_article_path(@project) %>
-			<%= link_to 'All Projects', projects_path %>
+			<%= link_to 'Edit', edit_project_path(@project) %>
+			<%#= link_to 'New Article', new_project_article_path(@project) %>			
 		</span>
 	</h1>
-	
 
-	<h2>Description:</h2>
-  	<p class="lead"><%= @project.instructions %></p>
-
-	<div>
+	<ul class="inline border">
 		<% @project.images.each do |project_image| %>
 
-		<%= image_tag project_image.asset.url(:medium) %> <br />
+		<li>
+			<%= link_to image_tag(project_image.asset.url(:medium)), project_image_path(@project, project_image) %>
+			<!--<a href="<%#=project_image.asset.url(:large)%>" class="fancybox" title="Sample title"><img src="<%#=project_image.asset.url(:medium)%>" /></a>-->
+			  
+		</li>
 
-		<%= link_to "Show", [@project, project_image] %> | 
-		<%= link_to "Edit", edit_project_path(@project) %> | 
-		<%= link_to "Delete", [@project, project_image], method: :delete %>
-
-		<br /><br />
-
+			
 		<% end %>
-	</div>
+	</ul>
+
+	<section class="border-top push-up">
+		<h2>Description:</h2>
+	  	<p><%= @project.instructions %></p>
+
+	  	<p>
+	  		View the full project here: <%= link_to "#{@project.name}", "http://happyhealth.herokuapp.com/enter", target: "_blank" %> 
+	  	</p>
+  	</section>
 
 </div>
 
@@ -45,5 +48,4 @@
 	</p>
 
 <% end %>
-
 

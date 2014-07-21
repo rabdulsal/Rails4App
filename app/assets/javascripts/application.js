@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery-readyselector
+//= require fancybox
 //= require_tree .
 
 $(function(){
@@ -22,6 +23,10 @@ $(function(){
 	        top: $('.homepage').height()
 	      }
 	});
+
+	// FancyBox
+
+	$("a.fancybox").fancybox();
 
 	// Parallax Scrolling
 

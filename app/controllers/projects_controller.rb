@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    @main_pic = @projects.last.images.first
   end
 
   # GET /projects/1
