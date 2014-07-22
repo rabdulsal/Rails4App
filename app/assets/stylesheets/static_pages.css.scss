@@ -152,6 +152,27 @@ body, p, li {
 	text-align: center;
 }
 
+.centered-block {
+	text-align: center;
+}
+
+.centered-block:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.project-image-center {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.show-image-center {
+	margin-left: 90px;
+}
+
 .navbar {
 	background-image: none !important;
 }

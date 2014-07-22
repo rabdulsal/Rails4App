@@ -11,18 +11,17 @@
 		</span>
 	</h1>
 
-	<ul class="inline border">
+	<section class="row push-up">
 		<% @project.images.each do |project_image| %>
-
-		<li>
-			<%= link_to image_tag(project_image.asset.url(:medium)), project_image_path(@project, project_image) %>
-			<!--<a href="<%#=project_image.asset.url(:large)%>" class="fancybox" title="Sample title"><img src="<%#=project_image.asset.url(:medium)%>" /></a>-->
-			  
-		</li>
-
+		<div class="col-sm-4 centered-block">
 			
+				<%= link_to image_tag(project_image.asset.url(:medium)), project_image_path(@project, project_image), class: "project-image-center" %>
+				<!--<a href="<%#=project_image.asset.url(:large)%>" class="fancybox" title="Sample title"><img src="<%#=project_image.asset.url(:medium)%>" /></a>-->
+				  
+			
+		</div>			
 		<% end %>
-	</ul>
+	</section>
 
 	<section class="border-top push-up">
 		<h2>Description:</h2>
