@@ -4,25 +4,26 @@
         <div class="navbar-header">
           <%= link_to "Home", home_url, class: "navbar-brand" %>
           <!--<a class="navbar-brand" href="#">Rashad's Rails4 App </a>-->
-          <ul class="nav navbar-nav">          
-            <!--<li>
-              <%#= link_to 'About', "static_pages/about" %>
-            </li>-->
-
-            <% if @articles %>
-            <li class="dropdown">
-              <%= link_to 'Projects', projects_url %> 
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li>Test 1</li>
-                <li>Test 2</li>
-              </ul>
-            </li>
-            <li><%= link_to "Articles", articles_url %></li>
-            <% end %>
-
-          </ul>
         </div>
+        <ul class="nav navbar-nav">          
+          <li class="active">
+            <%= link_to 'Projects', projects_url %>
+          </li>
+
+          <% if @articles %>
+          <li class="dropdown">
+             
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>Test 1</li>
+              <li>Test 2</li>
+            </ul>
+          </li>
+          <li><%= link_to "Articles", articles_url %></li>
+          <% end %>
+
+        </ul>
+        
       </div>
   </div>
 </nav>

@@ -1,39 +1,13 @@
-<h1>All My Projects</h1>
+<div class="row">
+  <section class="media col-sm-9 content-wrapper">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Instructions</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <%= render "project" %>
+    
+  </section>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td>
-          <%= link_to(image_tag(@main_pic.asset.url(:small)), project_path(project)) if project.images %>
-        </td>
-        <td>
-          <h3><%= link_to project.name, project %></h3>
+  <aside class="col-sm-3">
 
-            <%= link_to 'Edit', edit_project_path(project) %> | 
-            <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-          
-          <br /><br />
+    <%= render "static_pages/about" %>
 
-          <p><%= project.instructions %></p>
-          
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', new_project_path %>
+  </aside>
+</div>

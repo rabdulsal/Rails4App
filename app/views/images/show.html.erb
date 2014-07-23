@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1 class="push-down">
-	<%= link_to "#{@project.name}", project_path(@project) %> <span class="lead"><%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+	<%= link_to "#{@project.name}", project_path(@project) %> <span class="lead"><%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Delete', [@project, @image], method: :delete, data: { confirm: 'Are you sure?' } %></span>
 </h1>
 
-<div class="centered-block">
-  <%= image_tag @image.asset.url(:large), class: "project-image-center" %>
+<div class="centered-anchor">
+  <%= image_tag @image.asset.url(:large), class: "centered-block" %>
 </div>

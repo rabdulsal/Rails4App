@@ -1,40 +1,53 @@
-<h1>My Projects</h1>
-	<div class="media">
-		<% @projects.each do |project| %>
+<h1 class="lead project-index-title">My Projects</h1>
 
-		<div class="clearfix push-down">
-			<section class="pull-left push-right">
-				<%= link_to image_tag(@proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
-			</section>		
+<% @projects.each do |project| %>
 
-			<section class="media-body">
+<div class="clearfix push-down">
 
-				<h2 class="media-heading"><%= link_to "#{project.name}", project_url(project) %></h2>
+	<% if @proj_main_pic %>
+	<section class="pull-left push-right">
+		<%= link_to image_tag(@proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
+	</section>	
+	<% end %>	
 
-				<p class=""><%= project.instructions %></p>
+	<section class="media-body">
 
-				<%# project.images.each do |image| %>
+		<h2 class="media-heading"><%= link_to "#{project.name}", project_url(project) %></h2>
 
-				<!--<div>
-					<%#= link_to 'Edit', edit_project_path(project) %> | 
-		            <%#= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-		            <%# if image.id != @proj_main_pic.id %>
+		<% if project.language %>
 
-			            <ul class="sans-bullets">
-							<li>
-								<%#= link_to image_tag(image.asset.url(:thumb)), project_image_path(project, image) %>
-							</li>
-						</ul>
-
-					<%# end %>	        	
-	        	</div>-->
-
-	        	<%# end %>
-
-	        	<%= link_to "Read more", project_path(project), class: "pull-right" %>
-
-	        </section>
-	    </div>
+		
+		<% project.languages.each do |lang| %>
+			<small class="label label-info"><%= lang %></small>
 		<% end %>
 		
-	</div>
+
+		<% end %>
+
+		<p class=""><%= project.instructions %></p>
+
+		<%# project.images.each do |image| %>
+
+		<!--<div>
+			<%#= link_to 'Edit', edit_project_path(project) %> | 
+            <%#= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%# if image.id != @proj_main_pic.id %>
+
+	            <ul class="sans-bullets">
+					<li>
+						<%#= link_to image_tag(image.asset.url(:thumb)), project_image_path(project, image) %>
+					</li>
+				</ul>
+
+			<%# end %>	        	
+    	</div>-->
+
+    	<%# end %>
+
+    	<%= link_to "Read more", project_path(project), class: "pull-right" %>
+
+    </section>
+</div>
+<% end %>
+		
+	

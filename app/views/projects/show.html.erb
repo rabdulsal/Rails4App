@@ -2,35 +2,55 @@
 
 <%#= render @partial %>
 
-<div>
-	<h1>
-		<%= link_to "#{@project.name}", projects_path %>
+<div class="content-wrapper">
+
+	<p class="push-up push-left">
+		<%= link_to "<- Back to Projects", projects_path %>
+	</p>
+	
+	<h1 class="lead project-show-title push-down text-center">
+		<%= @project.name %>
 		<span class="lead">
 			<%= link_to 'Edit', edit_project_path(@project) %>
 			<%#= link_to 'New Article', new_project_article_path(@project) %>			
 		</span>
-	</h1>
+	</h1>	
 
-	<section class="row push-up">
+	<% if @project.language %>
+
+	<ul class="text-center">
+		<% @project.languages.each do |language| %>
+		<li class="inline label label-default push-right">
+			<%= language %>
+		</li>
+
+		<% end %>
+	</ul>
+
+	<% end %>
+
+	<section class="centered-anchor huge-push-up">
+		<div class="project-description centered-block">
+		  	<p class="text-justify">
+		  		<%= @project.instructions %>
+		  	</p>
+		  	<p class="text-justify">
+		  		Go to the full Project: <%= link_to "#{@project.name}", "http://happyhealth.herokuapp.com/enter", target: "_blank" %> 
+		  	</p>
+	  	</div>
+	</section>
+
+	<section class="centered-anchor">
 		<% @project.images.each do |project_image| %>
-		<div class="col-sm-4 centered-block">
+		<div class="centered-block project-image huge-push-up">
 			
-				<%= link_to image_tag(project_image.asset.url(:medium)), project_image_path(@project, project_image), class: "project-image-center" %>
+				<%= link_to image_tag(project_image.asset.url(:large)), project_image_path(@project, project_image)  %>
 				<!--<a href="<%#=project_image.asset.url(:large)%>" class="fancybox" title="Sample title"><img src="<%#=project_image.asset.url(:medium)%>" /></a>-->
 				  
 			
 		</div>			
 		<% end %>
 	</section>
-
-	<section class="border-top push-up">
-		<h2>Description:</h2>
-	  	<p><%= @project.instructions %></p>
-
-	  	<p>
-	  		View the full project here: <%= link_to "#{@project.name}", "http://happyhealth.herokuapp.com/enter", target: "_blank" %> 
-	  	</p>
-  	</section>
 
 </div>
 

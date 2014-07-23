@@ -31,25 +31,9 @@
 	<% else %>
 
 		<aside class="col-sm-3"> 
-			<div class="text-center">
-				<h2>Hi, I'm Rashad</h2>
-				<%= image_tag 'GG_Suit.gif', class: "gg-selfie" %> <br /><br />
-			</div>
+			
+			<%= render 'static_pages/about' %>
 
-			<p class="text-justify bio-text">
-				I'm passionate about design, startups and all things tech. I want to help you take over the world through great web-design, whether your needs range from a simple landing page, up to a complex web application with content and multi-user management.
-			</p>
-
-			<ul class="inline soc-med-icons">
-				<li><%= link_to image_tag("linkedin.png"), "https://www.linkedin.com/in/rashadabdulsalaam", target: "_blank" %></li>
-				<li><%= link_to image_tag("facebook.png"), "https://www.facebook.com/rsalaam80", target: "_blank" %></li>
-				<li><%= link_to image_tag("twitter.png"), "https://www.twitter.com/rabdulsal", target: "_blank" %></li>
-				<li><%= link_to image_tag("email.png"), 'mailto:rabdulsalaam@gmail.com' %></li>
-			</ul>
-
-			<!--<p>
-				<%#= link_to 'Email', 'mailto:rabdulsalaam@gmail.com', class: "btn btn-success btn-lg text-center", title: 'Click to email me' %>
-			</p>-->
 		</aside>
 	<% end %>
 
