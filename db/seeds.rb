@@ -14,10 +14,10 @@ Project.create(
 				# web_address: 	"https://happyhealth.herokuapp.com"
 				)
 
-Project.create(
-				name: 			"Prius Medical Center",
-				instructions: 	"Prius Medical Center is a respected Primary Care and Internal Medicine clinic serving a diverse patient community on the Northwest Side of Chicago. They needed a light-weight solution allowing patients to easily book appointments with the clinic's physicians online, while also elegantly interfacing with the organization's established IT software. I was able to provide this functionality with fast turn-around, and they were very pleased with the results.",
-				language: 		"Design"
+#Project.create(
+#				name: 			"Prius Medical Center",
+#				instructions: 	"Prius Medical Center is a respected Primary Care and Internal Medicine clinic serving a diverse patient community on the Northwest Side of Chicago. They needed a light-weight solution allowing patients to easily book appointments with the clinic's physicians online, while also elegantly interfacing with the organization's established IT software. I was able to provide this functionality with fast turn-around, and they were very pleased with the results.",
+#				language: 		"Design"
 				#project_type: 	"web-development",
 				#web_address: 	"http://www.priusmedicalcenter.com"
 				)
