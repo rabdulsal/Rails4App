@@ -7,6 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Project.create(
+				name: 			"Portfolio Site",
+				instructions: 	"I designed and built this portfolio site using Rails 4 on the backend and Bootstrap 3 on the front. I encourage you to look around and view my work, and don't hesitate to reach out if you have your own passion-project in need of a talented and dedicated designer/developer.",
+				language: 		"Design, Development"
+				)
+
+Project.create(
 				name: 			"HappyHealth",
 				instructions: 	"The Smart Personal Health Record - Store your personal, medical and insurance information securely in the cloud, and auto-fill those annoying doctor's forms to save you time and spare you redundancy. Try it now!",
 				language: 		"Design, Development"
@@ -20,4 +26,4 @@ Project.create(
 #				language: 		"Design"
 				#project_type: 	"web-development",
 				#web_address: 	"http://www.priusmedicalcenter.com"
-				)
+#				)
