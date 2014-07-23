@@ -24,7 +24,7 @@
 
 	<ul class="text-center">
 		<% @project.languages.each do |language| %>
-		<li class="inline label label-default push-right">
+		<li class="inline label label-info push-right">
 			<%= language %>
 		</li>
 
@@ -47,9 +47,15 @@
 	<section class="centered-anchor">
 		<% @project.images.each do |project_image| %>
 		<div class="centered-block project-image huge-push-up">
-			
+			<% if current_user %>
 				<%= link_to image_tag(project_image.asset.url(:large)), project_image_path(@project, project_image)  %>
 				<!--<a href="<%#=project_image.asset.url(:large)%>" class="fancybox" title="Sample title"><img src="<%#=project_image.asset.url(:medium)%>" /></a>-->
+
+			<% else %>
+
+				<%= image_tag project_image.asset.url(:large) %>
+
+			<% end %>
 				  
 			
 		</div>			
