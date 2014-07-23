@@ -4,9 +4,10 @@
 
 <div class="clearfix push-down">
 
-	<% if @proj_main_pic %>
+	<% proj_main_pic = project.images.first %>
+	<% if proj_main_pic %>
 	<section class="pull-left push-right">
-		<%= link_to image_tag(@proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
+		<%= link_to image_tag(proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
 	</section>	
 	<% end %>	
 
@@ -24,7 +25,7 @@
 
 		<% end %>
 
-		<p class=""><%= project.instructions %></p>
+		<p class=""><%= truncate(project.instructions, length: 140) %></p>
 
 		<%# project.images.each do |image| %>
 

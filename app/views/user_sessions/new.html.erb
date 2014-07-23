@@ -1,0 +1,20 @@
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Admin Log In</h1> 
+<span class="small">
+	<em>Unless you are logging-in as an Admin, check out the <%= link_to "Projects Page.", projects_path %></em>
+</span>
+
+<%= form_tag user_sessions_path do %>
+  <div class="field">
+    <%= label_tag :login %><br />
+    <%= text_field_tag :login, params[:login] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log In" %></div>
+<% end %>

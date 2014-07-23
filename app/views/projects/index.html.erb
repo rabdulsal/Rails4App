@@ -1,6 +1,10 @@
 <div class="row">
   <section class="media col-sm-9 content-wrapper">
 
+  	<% if notice %>
+		<p id="notice"><%= notice %></p>
+	<% end %>
+
     <%= render "project" %>
     
   </section>

@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
 
 <%#= render @partial %>
 
@@ -10,10 +12,12 @@
 	
 	<h1 class="lead project-show-title push-down text-center">
 		<%= @project.name %>
+		<% if current_user %>
 		<span class="lead">
 			<%= link_to 'Edit', edit_project_path(@project) %>
 			<%#= link_to 'New Article', new_project_article_path(@project) %>			
 		</span>
+		<% end %>
 	</h1>	
 
 	<% if @project.language %>
