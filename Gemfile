@@ -40,7 +40,7 @@ gem 'sprockets_better_errors'
 gem 'fancybox-rails'
 
 # S3 setup
-gem 'asset_sync', "~> 1.0.0"
+#gem 'asset_sync', "~> 1.0.0"
 
 ruby "2.0.0"
 
