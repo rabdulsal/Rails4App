@@ -1,0 +1,322 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*body {
+	font-family: 'Lato', sans-serif !important; font-weight: 100 !important;
+}*/
+
+body {
+	background-image: asset_url('subtle_background.png');
+	padding-bottom: 30px;
+}
+
+body, p, li {
+	font-family: 'Raleway', serif !important;
+	font-size: 16px !important;	
+	line-height: 150%;
+}
+
+.title-link {
+	color: blue !important;
+}
+
+.sans-bullets li {
+	list-style: none;
+}
+
+.push-up {
+	margin-top: 10px;
+}
+	.huge-push-up {
+		margin-top: 100px;
+	}
+
+.push-right {
+	margin-right: 10px;
+}
+
+.push-left {
+	margin-left: 10px;
+}
+
+.push-down {
+	margin-bottom: 10px;
+}
+	.big-push-down {
+		margin-bottom: 20px;
+	}
+
+.center {
+	margin: 0 auto;
+}
+
+.wrapper {
+	
+	min-height: 100% !important;
+	
+	
+}
+	.content-wrapper {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		padding-bottom: 20px;
+	}
+
+.aside-wrapper
+
+.homepage-links {
+	color: white;
+	font-weight: 400;
+	width: 66.6%;
+}
+	.homepage-links h3 {
+		font-weight: bold;
+	}
+	.homepage-links a {
+		color: white;
+	}
+	.homepage-links a:hover {
+		text-decoration: underline;
+		background: none !important;
+		color: white !important;
+	}
+
+.homepage {
+	height: 600px;
+	right: 0px;
+	background-attachment: fixed;
+	background-position: 50% 0px;
+}
+
+.homepage .background {
+	background-image: asset_url('comp_coffee_desk.jpg');
+	opacity: 1;
+	display: table-cell;
+	vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+}
+
+.background {
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: 50% 50% no-repeat;
+	background-size: cover;
+}
+
+/*.background-2 {
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 700px;
+	z-index: -2;
+}*/
+
+/*.blur-background {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}*/
+
+.headliner {
+	width: 66.6%;
+	background:rgba(0,0,0,0.7);
+	padding: 50px;
+	border-radius: 5px;
+}
+
+.headliner h1, .headliner h1 small, .headliner p, .enter {
+	color: rgba(255,255,255,1.0) !important;
+}
+	.headliner h1 {
+		font-size: 50px;
+		font-weight: 400;
+	}
+
+.enter {
+	border: 5px solid #fff;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.custo-btn:hover {
+	text-decoration: underline;
+}
+
+.jumbotron {
+	opacity: .9;
+	text-align: center;
+}
+
+.project-show-title, .project-index-title {
+	font-size: 80px !important;
+	text-transform: uppercase;
+}
+	.project-index-title {
+		font-size: 50px !important;
+	}
+
+.project-description {
+	width: 60%;
+	text-align: center;
+}
+
+.project-image {
+	width: 95.744680851064%;
+}
+
+.centered-anchor {
+	text-align: center;
+}
+
+.centered-anchor:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.centered-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.show-image-center {
+	margin-left: 90px;
+}
+
+#carousel-example-generic {
+	background-color: #ddd;
+	height: 400px;
+}
+
+.navbar {
+	background-image: none !important;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+.border-top {
+	border-top: 1px dotted #666;
+}
+
+.navbar-margin {
+	margin-top: 60px;
+}
+
+.selfie {
+	width: 100%;
+}
+
+.gg-selfie {
+	width: 50%;
+}
+
+.bio-bg {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-bio {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ddd;
+}
+
+.bio-text {
+	font-size: 14px !important;
+}
+
+.soc-med-icons {
+	padding-left: 10px;
+}
+	.soc-med-icons img {
+		max-width: 16%;
+		
+	}
+
+.dropdown-menu li a:hover {
+	color: #428bca !important;
+}
+
+.rpc-title {
+    color: blue;
+}
+
+.scoreboard {
+	position: relative;
+	
+	
+}
+.scoreboard li{
+    display: inline;
+    font-size: 20px;
+    background-color: yellow;
+}
+.score {
+     color: red;
+    font-size: 30px;
+}
+.right {
+    float: right;
+}
+.rounds li {
+    font-size: 20px;
+    list-style: none;
+}
+.player-win {
+     color: green;
+    font-size: 22px;
+}
+
+.inline li, .inline {
+	display: inline;
+}
+
+.rps-field {
+	border: 2px solid gray;
+	min-height: 300px !important;
+	background-color: gray;
+}
+
+.rps-buttons {
+	margin: 0 auto;
+}
+
+.play-image {
+	position: relative;
+	left: 50px;
+	top: 20px;
+	max-width: 150px;
+	display: inline-block !important;
+}
+
+#player, #CPU {	
+	min-height: 200px;	
+}
+
+#player {
+	background-color: red;
+}
+
+#CPU {
+	background-color: blue;
+}
