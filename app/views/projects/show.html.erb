@@ -10,7 +10,7 @@
 
 <div class="content-wrapper">
 
-	<p class="push-up push-left">
+	<p>
 		<%= link_to "<- Back to Projects", projects_path %>
 	</p>
 	
@@ -41,10 +41,7 @@
 		<div class="project-description centered-block">
 		  	<p class="text-justify">
 		  		<%= @project.instructions %>
-		  	</p>
-		  	<p class="text-justify">
-		  		Go to the full Project: <%= link_to "#{@project.name}", "http://happyhealth.herokuapp.com/enter", target: "_blank" %> 
-		  	</p>
+		  	</p>		  	
 	  	</div>
 	</section>
 
@@ -64,6 +61,12 @@
 			
 		</div>			
 		<% end %>
+
+		<h3 class="huge-push-up">Full Project:</h3>
+
+		<h2 class="website">
+			<%= link_to "#{@project.name}", @project.website, class: "btn btn-primary btn-lg btn-block", target: "_blank" %>
+		</h2>
 	</section>
 
 </div>

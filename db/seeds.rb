@@ -9,15 +9,17 @@
 Project.create(
 				name: 			"Portfolio Site",
 				instructions: 	"I designed and built this portfolio site using Rails 4 on the backend and Bootstrap 3 on the front. I encourage you to look around and view my work, and don't hesitate to reach out if you have your own passion-project in need of a talented and dedicated designer/developer.",
-				language: 		"Design, Development"
+				language: 		"Design, Development",
+				project_type: 	"website",
+				website: 		"http://rashadsalaam.com"
 				)
 
 Project.create(
 				name: 			"HappyHealth",
-				instructions: 	"The Smart Personal Health Record - Store your personal, medical and insurance information securely in the cloud, and auto-fill those annoying doctor's forms to save you time and spare you redundancy. Try it now!",
-				language: 		"Design, Development"
-				# project_type: 	"web-development",
-				# web_address: 	"https://happyhealth.herokuapp.com"
+				instructions: 	"This project was a deep, personal passion of mine, and my attempt at building a tool to solve the problem of: "Why is it when I go to the doctor's office I have to deal with a bunch of paperwork, and then when I see a different doctor I have to answer all the same questions from the last one? Why isn't there one place where my information is stored, and then each doctor is updated automatically when I arrive?" HappyHealth was designed to securely store your basic personal, medical and insurance information in the cloud, then auto-fill different doctor offices' forms and print them out - all to save time and spare redundancy. I continue to make small updates and improvements to this project where I can.",
+				language: 		"Design, Development",
+				project_type: 	"web-application",
+				website: 		"https://happyhealth.herokuapp.com"
 				)
 
 #Project.create(

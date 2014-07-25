@@ -60,7 +60,7 @@ body, p, li {
 	.content-wrapper {
 		background-color: #fff;
 		border: 1px solid #ddd;
-		padding-bottom: 20px;
+		padding: 10px 10px 20px;
 	}
 
 .aside-wrapper
@@ -252,6 +252,12 @@ body, p, li {
 		max-width: 16%;
 		
 	}
+
+.website {
+	text-transform: uppercase;
+	width: 80%;
+	margin: 0 auto;
+}
 
 .dropdown-menu li a:hover {
 	color: #428bca !important;
