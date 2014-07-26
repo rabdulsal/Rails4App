@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20140725035522) do
     t.string   "asset_content_type"
     t.integer  "asset_file_size"
     t.datetime "asset_updated_at"
-    t.boolean  "main_image",         default: false
+    t.integer  "main_image"
   end
 
   create_table "posts", force: true do |t|

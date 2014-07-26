@@ -34,7 +34,7 @@ gem 'aws-sdk'
 gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'taps'
-gem 'sprockets_better_errors'
+#gem 'sprockets_better_errors'
 
 # FancyBox
 gem 'fancybox-rails'

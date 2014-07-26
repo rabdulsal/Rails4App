@@ -15,14 +15,8 @@
 
 		<h2 class="media-heading"><%= link_to "#{project.name}", project_url(project) %></h2>
 
-		<% if project.language %>
-
-		
-		<% project.languages.each do |lang| %>
-			<small class="label label-info"><%= lang %></small>
-		<% end %>
-		
-
+		<% if project.project_type %>		
+			<small class="label label-info"><%= project.project_type %></small>
 		<% end %>
 
 		<p class=""><%= truncate(project.instructions, length: 140) %></p>
