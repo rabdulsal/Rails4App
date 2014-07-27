@@ -5,8 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.order(created_at: :desc)
-    @proj_main_pic = @projects.find(4)
+    @projects = Project.order(created_at: :desc)    
   end
 
   # GET /projects/1
