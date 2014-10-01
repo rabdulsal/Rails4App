@@ -1,12 +1,16 @@
 <h1 class="lead project-index-title text-center">My Projects</h1>
 
+<% if current_user %>
+	<%= link_to 'New Project', new_project_path, class: "btn btn-primary" %>
+<% end %>
+
 <% @projects.each do |project| %>
 
 <div class="clearfix push-down">
 
 	<% proj_main_pic = project.images.first %>
 	<% if proj_main_pic %>
-	<section class="pull-left push-right">
+	<section class="pull-left push-right push-up">
 		<%= link_to image_tag(proj_main_pic.asset.url(:medium)), project_path(project), class: "media-object" %>
 	</section>	
 	<% end %>	
