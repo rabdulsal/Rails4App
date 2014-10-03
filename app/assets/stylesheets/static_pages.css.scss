@@ -263,6 +263,10 @@ body, p, li {
 	color: #428bca !important;
 }
 
+.clipped-width-full, .clipped-width-full img {
+	max-width: 100%;
+}
+
 .rpc-title {
     color: blue;
 }
